@@ -9,7 +9,6 @@ v2struct(par); v2struct(cPar); v2struct(data); v2struct(auxData);
 pars_T = T_A;
 TC_tp = tempcorr(temp.tp, T_ref, pars_T);
 TC_am = tempcorr(temp.am, T_ref, pars_T);
-TC_tR = tempcorr(temp.tR, T_ref, pars_T);
 TC_Ri = tempcorr(temp.Ri, T_ref, pars_T);
 TC_tL_m = tempcorr(temp.tL_m, T_ref, pars_T);
 TC_tL_f = tempcorr(temp.tL_f, T_ref, pars_T);
@@ -60,7 +59,6 @@ prdData.am = a_m;
 prdData.Lp = Lw_p;
 prdData.Lpm = Lw_pm;
 prdData.Li = Lw_i;
-prdData.tR = t_R;
 prdData.Ri = R_i;
 
 % length - wet weight

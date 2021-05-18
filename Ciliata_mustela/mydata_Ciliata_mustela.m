@@ -12,7 +12,7 @@ metaData.species_en = 'Five-bear cockling';
 metaData.ecoCode.climate = {'BWh','BSh','BSk','Cfb','ET','EF'};
 metaData.ecoCode.ecozone = {'MANE'};
 metaData.ecoCode.habitat = {'jiMi','0jMcp'};
-metaData.ecoCode.embryo  = {'Mp'};
+metaData.ecoCode.embryo  = {'Mp'}; 
 metaData.ecoCode.migrate = {'Mo'};
 metaData.ecoCode.food    = {'biHa','biCiw','biCim','biCid','biCik','biCvf'};
 metaData.ecoCode.gender  = {'Dg'};
@@ -46,9 +46,6 @@ data.Lp = 14; units.Lp = 'cm'; label.Lp = 'length at puberty'; bibkey.Lp = {'Coh
 data.Lpm = 12; units.Lpm = 'cm'; label.Lpm = 'length at puberty for males'; bibkey.Lpm = {'CoheInad1990'};
   comment.Lpm = 'CoheInad1990 - 11-13; Smiet1992 - 14.9';
 data.Li = 25; units.Li = 'cm'; label.Li = 'ultimate length'; bibkey.Li = {'CoheInad1990'};
-
-data.tR = 365; units.tR = 'd'; label.tR = 'time since birth at first egg production'; bibkey.tR = {'CoheInad1990'};
-  temp.tR = C2K(13); units.temp.tR = 'K'; label.temp.tR = 'temperature';
 
 data.Ri = 82.19; units.Ri = '#/d'; label.Ri = 'ultimate reproduction rate'; bibkey.Ri = {'CoheInad1990'};
   temp.Ri = C2K(12); units.temp.Ri = 'K'; label.temp.Ri = 'temperature';

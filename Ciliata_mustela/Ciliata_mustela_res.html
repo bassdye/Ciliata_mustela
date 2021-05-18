@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <TITLE>Ciliata_mustela</TITLE>
+  <style>
+    div.prd {
+      width: 50%;
+      float: left;
+    }
+
+    div.par {
+      width: 50%;
+      float: right;
+    }
+
+    p.clear {
+      clear: both;
+    }
+
+    .head {
+      background-color: #FFE7C6
+    }
+
+    .psd {
+      color: blue
+    }
+
+    #prd {
+      border-style: solid hidden solid hidden;
+    }
+
+    #par {
+      border-style: solid hidden solid hidden;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2}
+  </style>
+</HEAD>
+
+<BODY>
+
+  <div class="prd">
+  <h1>Ciliata mustela</h1>
+  </div>
+
+  <div class="par">
+  <h4>COMPLETE = 2.0; MRE =   14.677; SMSE =    0.695 </h4>
+  </div>
+
+  <p class="clear"></p>
+
+  <div class="prd">
+  <h2>Data & predictions</h2>
+  <TABLE id="prd">
+    <TR  class="head"><TH>data</TH> <TH>prd</TH> <TH>RE</TH>  <TH>symbol</TH> <TH>units</TH> <TH>description</TH> </TR>
+    <TR><TD>365</TD> <TD>1256</TD> <TD>2.441</TD> <TD>tp</TD> <TD>d</TD> <TD>time since birth at puberty</TD></TR>
+    <TR><TD>1460</TD> <TD>5544</TD> <TD>2.797</TD> <TD>am</TD> <TD>d</TD> <TD>life span</TD></TR>
+    <TR><TD> 14</TD> <TD>49.88</TD> <TD>2.563</TD> <TD>Lp</TD> <TD>cm</TD> <TD>length at puberty</TD></TR>
+    <TR><TD> 12</TD> <TD>4.912</TD> <TD>0.5906</TD> <TD>Lpm</TD> <TD>cm</TD> <TD>length at puberty for males</TD></TR>
+    <TR><TD> 25</TD> <TD>120.2</TD> <TD>3.808</TD> <TD>Li</TD> <TD>cm</TD> <TD>ultimate length</TD></TR>
+    <TR><TD>82.19</TD> <TD>9708</TD> <TD>117.1</TD> <TD>Ri</TD> <TD>#/d</TD> <TD>ultimate reproduction rate</TD></TR>
+    <TR><TD colspan="2">see figure</TD> <TD>0.8006</TD> <TD>LWw</TD> <TD colspan="2">length, <font color="blue"><i>vs.</i></font> wet weight</TD>
+    <TR><TD colspan="2">see figure</TD> <TD>0.9767</TD> <TD>tL_m</TD> <TD colspan="2">time, <font color="blue"><i>vs.</i></font> length</TD>
+    <TR><TD colspan="2">see figure</TD> <TD>0.9997</TD> <TD>tL_f</TD> <TD colspan="2">time, <font color="blue"><i>vs.</i></font> length</TD>
+    <TR class="psd"><TD>0.02</TD> <TD>0.02064</TD> <TD>0.0318</TD> <TD>psd.v</TD> <TD>cm/d</TD> <TD>energy conductance</TD></TR>
+    <TR class="psd"><TD>0.8</TD> <TD>0.6147</TD> <TD>0.2316</TD> <TD>psd.kap</TD> <TD>-</TD> <TD>allocation fraction to soma</TD></TR>
+    <TR class="psd"><TD>0.95</TD> <TD>0.95</TD> <TD>  0</TD> <TD>psd.kap_R</TD> <TD>-</TD> <TD>reproduction efficiency</TD></TR>
+    <TR class="psd"><TD> 18</TD> <TD>21.64</TD> <TD>0.2025</TD> <TD>psd.p_M</TD> <TD>J/d.cm^3</TD> <TD>vol-spec som maint</TD></TR>
+    <TR class="psd"><TD>0.002</TD> <TD>0.002</TD> <TD>  0</TD> <TD>psd.k_J</TD> <TD>1/d</TD> <TD>maturity maint rate coefficient</TD></TR>
+    <TR class="psd"><TD>0.8</TD> <TD>0.8006</TD> <TD>0.0007137</TD> <TD>psd.kap_G</TD> <TD>-</TD> <TD>growth efficiency</TD></TR>
+  </TABLE>
+  </div>
+
+  <div class="par">
+  <h2>abj parameters at 20.0&deg;C</h2>
+  <TABLE id="par">
+    <TR class="head"><TH>symbol</TH> <TH>units</TH> <TH>value</TH>  <TH>free</TH> <TH>description</TH> </TR>
+    <TR><TD>T_ref</TD> <TD>K</TD> <TD>293.1</TD> <TD>0</TD> <TD>Reference temperature</TD></TR>
+    <TR><TD>T_A</TD> <TD>K</TD> <TD>7400</TD> <TD>0</TD> <TD>Arrhenius temp</TD></TR>
+    <TR><TD>z</TD> <TD>-</TD> <TD>1.047</TD> <TD>1</TD> <TD>zoom factor for females</TD></TR>
+    <TR><TD>F_m</TD> <TD>l/d.cm^2</TD> <TD>6.5</TD> <TD>0</TD> <TD>{F_M}, max spec searching rate</TD></TR>
+    <TR><TD>kap_X</TD> <TD>-</TD> <TD>0.8</TD> <TD>0</TD> <TD>digestion efficiency of food to reserve</TD></TR>
+    <TR><TD>kap_P</TD> <TD>-</TD> <TD>0.1</TD> <TD>0</TD> <TD>faecation efficiency of food to faeces</TD></TR>
+    <TR><TD>v</TD> <TD>cm/d</TD> <TD>0.02064</TD> <TD>1</TD> <TD>energy conductance</TD></TR>
+    <TR><TD>kap</TD> <TD>-</TD> <TD>0.6147</TD> <TD>1</TD> <TD>allocation fraction to soma</TD></TR>
+    <TR><TD>kap_R</TD> <TD>-</TD> <TD>0.95</TD> <TD>0</TD> <TD>reproduction efficiency</TD></TR>
+    <TR><TD>p_M</TD> <TD>J/d.cm^3</TD> <TD>21.64</TD> <TD>1</TD> <TD>[p_M], vol-spec somatic maint</TD></TR>
+    <TR><TD>p_T</TD> <TD>J/d.cm^2</TD> <TD>  0</TD> <TD>0</TD> <TD>{p_T}, surf-spec somatic maint</TD></TR>
+    <TR><TD>k_J</TD> <TD>1/d</TD> <TD>0.002</TD> <TD>0</TD> <TD>maturity maint rate coefficient</TD></TR>
+    <TR><TD>E_G</TD> <TD>J/cm^3</TD> <TD>5226</TD> <TD>1</TD> <TD>[E_G], spec cost for structure</TD></TR>
+    <TR><TD>E_Hb</TD> <TD>J</TD> <TD>3.314</TD> <TD>1</TD> <TD>maturity at birth</TD></TR>
+    <TR><TD>E_Hj</TD> <TD>J</TD> <TD>5.063e+04</TD> <TD>1</TD> <TD>maturity at metam</TD></TR>
+    <TR><TD>E_Hp</TD> <TD>J</TD> <TD>4.866e+06</TD> <TD>1</TD> <TD>maturity at puberty for females</TD></TR>
+    <TR><TD>h_a</TD> <TD>1/d^2</TD> <TD>8.097e-09</TD> <TD>1</TD> <TD>Weibull aging acceleration</TD></TR>
+    <TR><TD>s_G</TD> <TD>-</TD> <TD>0.0001</TD> <TD>0</TD> <TD>Gompertz stress coefficient</TD></TR>
+    <TR><TD>E_Hpm</TD> <TD>J</TD> <TD>4.866e+06</TD> <TD>1</TD> <TD>maturity at puberty for males</TD></TR>
+    <TR><TD>E_Hx</TD> <TD>J</TD> <TD>3.645</TD> <TD>1</TD> <TD>maturity at fledge/weaning</TD></TR>
+    <TR><TD>del_M</TD> <TD>-</TD> <TD>0.2131</TD> <TD>1</TD> <TD>shape coefficient</TD></TR>
+    <TR><TD>f</TD> <TD>-</TD> <TD>  1</TD> <TD>0</TD> <TD>scaled functional response for 0-var data</TD></TR>
+    <TR><TD>f_LWw</TD> <TD>-</TD> <TD>  1</TD> <TD>1</TD> <TD>scaled functional response for LWw data</TD></TR>
+    <TR><TD>f_tL_f</TD> <TD>-</TD> <TD>  1</TD> <TD>1</TD> <TD>scaled functional response for tL_f data</TD></TR>
+    <TR><TD>f_tL_m</TD> <TD>-</TD> <TD>  1</TD> <TD>1</TD> <TD>scaled functional response for tL_m data</TD></TR>
+    <TR><TD>t_N</TD> <TD>d</TD> <TD>365</TD> <TD>0</TD> <TD>period between broods</TD></TR>
+    <TR><TD>z_m</TD> <TD>-</TD> <TD>1.047</TD> <TD>1</TD> <TD>zoom factor for males</TD></TR>
+  </TABLE>
+  </div>
+
+</BODY>
+</HTML>
